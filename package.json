@@ -1,0 +1,20 @@
+{
+  "name": "code-test-graphql-api-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Apollo GraphQL API server exposing the provided JSON dataset (nodes, responses, triggers, actions, resource templates) behind Bearer-token authentication.",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test test/schema.test.js test/auth.test.js"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.11.3",
+    "graphql": "^16.9.0"
+  }
+}
